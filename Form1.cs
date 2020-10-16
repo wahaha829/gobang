@@ -93,6 +93,7 @@ namespace gobang
             }
             else
                 this.Cursor = Cursors.Default;
+            // 印出座標、index值
             label1.Text = "index_row : " + board1.index_row;
             label2.Text = "index_col : " + board1.index_col;
             label3.Text = "x座標值 : " + e.X;
@@ -148,6 +149,8 @@ namespace gobang
                 this.Controls.Remove(chess_list[i]);
             }
         }
+
+
         public bool isfive(int row, int col)
         //依據放下棋子的index值，檢查四個方向是否有五子相連
         {
