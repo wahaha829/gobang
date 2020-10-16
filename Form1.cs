@@ -154,13 +154,13 @@ namespace gobang
         public bool isfive(int row, int col)
         //依據放下棋子的index值，檢查四個方向是否有五子相連
         {
-            int[] row_array = new int[] {-1, -1, 0, 1}; //row方向的 北,東北,東,東南
-            int[] col_array = new int[] { 0,  1, 1, 1}; //col方向的 北,東北,東,東南
+            int[] row_array = new int[] {-1, -1, 0, 1}; //row的 北,東北,東,東南
+            int[] col_array = new int[] { 0,  1, 1, 1}; //col的 北,東北,東,東南
 
             for (int j = 0; j <= 3; j++) // 0-3代表4種方向
             {
                 chess_linked = 1;
-                for (int i = 1; i <= 4; i++) //正向檢查4顆棋子
+                for (int i = 1; i <= 4; i++) // 1-4正向檢查4顆棋子
                 {
                     try
                     {
@@ -176,7 +176,7 @@ namespace gobang
                         break;
                     }
                 }
-                for (int i = 1; i <= 4; i++) //反向檢查4顆棋子
+                for (int i = 1; i <= 4; i++) // 1-4反向檢查4顆棋子
                 {
                     try
                     {
